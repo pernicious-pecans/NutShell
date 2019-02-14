@@ -1,5 +1,6 @@
 import eventDataManager from "./evtDataMgr"
 import eventCard from "./eventCard"
+
 const $ = document.querySelector.bind(document)
 
 
@@ -17,7 +18,6 @@ const eventList = {
             }
         )
     }
-
 }
 
 export default eventList

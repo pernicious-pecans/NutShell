@@ -4,8 +4,14 @@ import eventCard from "./events/eventCard"
 import formFunctions from "./events/eventForm";
 import formHTML from "./events/eventHTMLforForm"
 
-// eventDataManager.fetchEvents()
-// formHTML()
+const $ = document.querySelector.bind(document)
 
-formFunctions()
+
+
+const post = $("#events_input")
+
+
 eventList.list()
+
+
+post.innerHTML += formHTML()

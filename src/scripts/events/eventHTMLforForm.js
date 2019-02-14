@@ -1,4 +1,5 @@
 import eventDataManager from "./evtDataMgr"
+import formFunctions from "./eventForm"
 const $ = document.querySelector.bind(document)
 
 /*
@@ -37,6 +38,5 @@ const formHTML = () => {
             </section>
         `
     }
-}
 
 export default formHTML
