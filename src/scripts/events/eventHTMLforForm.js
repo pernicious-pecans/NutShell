@@ -11,31 +11,32 @@ const $ = document.querySelector.bind(document)
 **Then** the event should be displayed in the application in the `Events` component
 */
 
-const post = $("#events_input")
-const formFunc = () => {
+const formHTML = () => {
 
-    seeEventForm: () => {
         return `
         <section>
                 <input id="eventId" name="eventId" type="hidden"></input>
+                <input id="userId" name="userId" type="hidden"></input>
 
             <fieldset>
-                <label class="label" for="eventId"> Name of Event </label>
-                <input id="eventId" type="text"></input>
+                <label class="label" for="eventName"> Name of Event </label>
+                <input id="eventName" type="text"></input>
             </fieldset>
-       
-            <fieldset>
-                <label class="label" for="eventId"> Name of Event </label>
-                <input id="eventId" type="text"></input>
-            </fieldset>
-        
-          
 
-        </section>
+            <fieldset>
+                <label class="label" for="eventDate"> Date of Event </label>
+                <input id="eventDate" type="text"></input>
+            </fieldset>
+
+            <fieldset>
+                <label class="label" for="eventLocation"> Location of Event </label>
+                <input id="eventLocation" type="text"></input>
+            </fieldset>
+
+            <button id="eventFormAction">Save Event</button>
+            </section>
         `
-
-
-
     }
-
 }
+
+export default formHTML
