@@ -1,5 +1,0 @@
-const EventData = {
-    fetchEvents: () => {
-
-    }
-}
