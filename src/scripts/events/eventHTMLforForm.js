@@ -1,5 +1,3 @@
-import eventDataManager from "./evtDataMgr"
-import formFunctions from "./eventForm"
 const $ = document.querySelector.bind(document)
 
 /*

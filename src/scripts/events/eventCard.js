@@ -1,4 +1,3 @@
-import eventDataManager from "./evtDataMgr"
 
 const eventCard = (event)=>
 {
