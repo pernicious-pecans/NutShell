@@ -10,17 +10,39 @@ const saveEvent = () => {
 
     theButton.addEventListener("click", () => {
 
+        const newEvent = {
+            userId: $("#userId").value,
+            eventName: $("#eventName").value,
+            eventDate: $("#eventDate").value,
+            eventLocation: $("#eventLocation").value
+        }
         if (theButton.textContent.startsWith("Save")) {
 
-            const newEvent = {
-                eventName: $("#eventName").value,
-                userId: $("#userId").value,
-                eventLocation: $("#eventLocation").value,
-                eventDate: $("#eventDate").value
-            }
-            eventDataManager.saveEvent(newEvent)
+
+            console.log("new event:", newEvent)
+
+            fetch("http://localhost:8088/events", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newEvent)
+
+            }).then(clearEventForm)
+
+        }
+        else if (theButton.textContent.startsWith("Update")) {
+
+            fetch(`http://localhost:8088/events/${id}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newEvent)
+            }).then(clearEventForm)
         }
     })
 }
+
 
 export default saveEvent

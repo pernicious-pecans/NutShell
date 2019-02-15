@@ -27,19 +27,19 @@ const eventDataManager = {
     editEvent: (eventId, event) => {
         return fetch(`http://localhost:8088/events/${eventId}`, {
             method: "PUT",
-            Headers: {
+            headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(event)
         })
     },
-    saveEvent: (event) => {
+    saveEvent: (newEvent) => {
         return fetch("http://localhost:8088/events", {
             method: "POST",
-            Headers: {
+            headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(event)
+            body: JSON.stringify(newEvent)
         })
     },
 }
