@@ -6,8 +6,9 @@ const post = $("#events_input")
 
 const formFunctions = () => {
 
-post.innerHTML = formHTML
+    seeForm: () => {
+         post.innerHTML = formHTML()
 
+    }
 }
-
 export default formFunctions
