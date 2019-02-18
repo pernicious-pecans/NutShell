@@ -21,17 +21,15 @@ const eventAction = () => {
 
             eventDataManager.getEvent(theId).then(
                 (event) => {
-                    $("#eventId").value = event.id,
+                         $("#eventId").value = event.id,
                         // $("#userId").value = event.userId,
                         $("#eventDate").value = event.eventDate,
                         $("#eventLocation").value = event.eventLocation,
-                        $("#eventName").value = event.eventName
-                    document.querySelector("#eventFormAction").textContent = "Update Event"
-                })
+                        $("#eventName").value = event.eventName,
+                        $("#eventFormAction").textContent = "Update Event"
+                    })
             .then(() => saveEvent())
-            .then(() => {
-                document.querySelector("#eventFormAction").textContent = "Save Event"
-            })
+            .then(() => eventList)
 
 
         } else if (event.target.id.startsWith("Delete")) {

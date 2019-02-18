@@ -29,6 +29,9 @@ const saveEvent = () => {
               eventDataManager.editEvent(parseInt(id), newEvent)
             .then(() => eventList.list())
             .then(() => clearEventForm())
+            .then(()=> {
+                document.querySelector("#eventFormAction").textContent = "Save Event"
+            })
         }
     })
 }

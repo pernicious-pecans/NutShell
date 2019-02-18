@@ -29,26 +29,14 @@
   ],
   "events": [
     {
-      "eventName": "SwingABat",
+      "eventName": "swing",
       "eventDate": "Friday",
       "eventLocation": "Downtown",
       "id": 4
     },
     {
-      "eventName": "HOEdown",
-      "eventDate": "Saturday",
-      "eventLocation": "downtown",
-      "id": 5
-    },
-    {
-      "eventName": "Play Music",
-      "eventDate": "Sat",
-      "eventLocation": "here",
-      "id": 6
-    },
-    {
       "eventName": "SingALong",
-      "eventDate": "Sat",
+      "eventDate": "FRIDAY",
       "eventLocation": "here",
       "id": 7
     },
@@ -57,12 +45,6 @@
       "eventDate": "Friday",
       "eventLocation": "Downtown",
       "id": 8
-    },
-    {
-      "eventName": "Needlepoint",
-      "eventDate": "yyy",
-      "eventLocation": "yy",
-      "id": 9
     },
     {
       "eventName": "Swing-A-Bat",
@@ -77,10 +59,34 @@
       "id": 11
     },
     {
-      "eventName": "BAT Caving",
-      "eventDate": "Saturday",
-      "eventLocation": "The Caves",
+      "eventName": "BaseBall Game",
+      "eventDate": "Friday",
+      "eventLocation": "Ballfield",
       "id": 12
+    },
+    {
+      "eventName": "Swings",
+      "eventDate": "Friday",
+      "eventLocation": "playground",
+      "id": 14
+    },
+    {
+      "eventName": "Batman",
+      "eventDate": "Friday",
+      "eventLocation": "PARK",
+      "id": 15
+    },
+    {
+      "eventName": "AAA",
+      "eventDate": "AA",
+      "eventLocation": "AA",
+      "id": 16
+    },
+    {
+      "eventName": "AAA",
+      "eventDate": "AA",
+      "eventLocation": "AA",
+      "id": 17
     }
   ],
   "tasks": [
