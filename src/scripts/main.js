@@ -1,11 +1,8 @@
-import newsImportFactory from "./news/news-form"
-import newsPrintToDom from "./news/news-render"
 import newsGetAndShow from "./news/news-display"
-import postNews from "./news/news-add"
+import NewsManager from "./news/news-post-manager"
+import newsItemChange from "./news/news-edit-delete"
 
-
-newsGetAndShow();
-const html = newsImportFactory()
-postNews()
-
-newsPrintToDom(html, "news_input")
+NewsManager.generateNewsForm()
+NewsManager.postNews()
+newsGetAndShow()
+newsItemChange()
