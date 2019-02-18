@@ -5,7 +5,6 @@ return `<label for="Name">Name: </label>
         <input id="summary" type="text" placeholder="summary">
         <label for="name">Email: </label>
         <input id="URL" type="text">
-        <button id="button">Save Article</button>`
+        <button id="#newsPost">Save Article</button>`
 }
-
 export default newsInputFactory
