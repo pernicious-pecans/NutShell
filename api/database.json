@@ -29,25 +29,58 @@
   ],
   "events": [
     {
-      "userId": "",
-      "eventName": "code",
-      "eventDate": "now",
-      "eventLocation": "here",
-      "id": 1
+      "eventName": "SwingABat",
+      "eventDate": "Friday",
+      "eventLocation": "Downtown",
+      "id": 4
     },
     {
-      "userId": "",
-      "eventName": "sing",
-      "eventDate": "tomorrow",
-      "eventLocation": "here",
-      "id": 2
+      "eventName": "HOEdown",
+      "eventDate": "Saturday",
+      "eventLocation": "downtown",
+      "id": 5
     },
     {
-      "userId": "",
-      "eventName": "ddddd",
-      "eventDate": "lllll",
-      "eventLocation": "nnnnxxx",
-      "id": 3
+      "eventName": "Play Music",
+      "eventDate": "Sat",
+      "eventLocation": "here",
+      "id": 6
+    },
+    {
+      "eventName": "SingALong",
+      "eventDate": "Sat",
+      "eventLocation": "here",
+      "id": 7
+    },
+    {
+      "eventName": "Baseball",
+      "eventDate": "Friday",
+      "eventLocation": "Downtown",
+      "id": 8
+    },
+    {
+      "eventName": "Needlepoint",
+      "eventDate": "yyy",
+      "eventLocation": "yy",
+      "id": 9
+    },
+    {
+      "eventName": "Swing-A-Bat",
+      "eventDate": "Saturday",
+      "eventLocation": "Downtown",
+      "id": 10
+    },
+    {
+      "eventName": "BAT Caving",
+      "eventDate": "Saturday",
+      "eventLocation": "The Caves",
+      "id": 11
+    },
+    {
+      "eventName": "BAT Caving",
+      "eventDate": "Saturday",
+      "eventLocation": "The Caves",
+      "id": 12
     }
   ],
   "tasks": [

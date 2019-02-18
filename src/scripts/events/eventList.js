@@ -12,9 +12,10 @@ const eventList = {
     list: () => {
         eventDataManager.fetchEvents().then(
             (parsedEvents) => {
+                spot.innerHTML = "";
                 parsedEvents.forEach(event => {
                     spot.innerHTML += eventCard(event)
-                });
+                })
             }
         )
     }

@@ -6,3 +6,9 @@ article {
     display: flex;
     flex-direction: row
 }
+.button--card {
+    margin-top:5px;
+    margin-bottom: 5px;
+    padding: 2px;
+    justify-content: space-around;
+}

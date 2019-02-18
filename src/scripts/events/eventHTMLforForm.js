@@ -14,8 +14,8 @@ const formHTML = () => {
 
         return `
         <section>
-                <input id="eventId" name="eventId" type="hidden"></input>
-                <input id="userId" name="userId" type="hidden"></input>
+                <input id="eventId" name="eventId" ></input>
+                <input id="userId" name="userId"></input>
 
             <fieldset>
                 <label class="label" for="eventName"> Name of Event </label>
