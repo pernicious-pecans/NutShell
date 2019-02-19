@@ -1,4 +1,4 @@
-import newsFactory from "./news-display-factory"
+import newsFactory from "./newsHTML"
 const $ = document.querySelector.bind(document)
 
 const newsGetAndShow = () => {

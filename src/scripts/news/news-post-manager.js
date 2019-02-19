@@ -1,19 +1,20 @@
 const $ = document.querySelector.bind(document)
-import newsGetAndShow from "./news-display"
-const NewsManager = {
-    postNews : () => {
-        document.getElementById("#newsPost").addEventListener("click", () => {
+import newsGetAndShow from "./newsPrintToDom"
 
-    const newsToAdd = {
+const NewsManager = {
+    postNews: () => {
+        document.getElementById("#newsPostButton").addEventListener("click", () => {
+
+            const newsToAdd = {
                 // userId: 2,
-                newsTitle: $("#name").value,
-                synopsis: $("#summary").value,
-                url: $("#URL").value,
+                newsTitle: $("#newsName").value,
+                synopsis: $("#newsSummary").value,
+                url: $("#newsUrl").value,
                 newsTimestamp: `${new Date(2019, 2)}`,
                 user: {
                     userId: 2
                 }
-    }
+            }
             fetch("http://localhost:8088/news", {
                 method: "POST",
                 headers: {
@@ -29,17 +30,19 @@ const NewsManager = {
             //     contactForm()
             // })
 
-        newsGetAndShow() })
+            newsGetAndShow()
+        })
     },
-    generateNewsForm : () => {
+    generateNewsForm: () => {
         document.querySelector("#news_input").innerHTML = `
+        <input type="hidden" id=newsHiddenInput value="">
         <label for="Name">Name: </label>
-        <input id="name" type="text">
+        <input id="newsName" type="text">
         <label for="name">Summary: </label>
-        <input id="summary" type="text" placeholder="summary">
-        <label for="name">URL: </label>
-        <input id="URL" type="text">
-        <button id="#newsPost">Save Article</button>
+        <input id="newsSummary" type="text" placeholder="summary">
+        <label for="newsUrl">URL: </label>
+        <input id="newsUrl" type="text">
+        <button id="#newsPostButton">Save Article</button>
         `
     }
 

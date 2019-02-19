@@ -29,6 +29,16 @@
         "userId": 2
       },
       "id": 5
+    },
+    {
+      "newsTitle": "test",
+      "synopsis": "test",
+      "url": "test.com",
+      "newsTimestamp": "Fri Mar 01 2019 00:00:00 GMT-0600 (Central Standard Time)",
+      "user": {
+        "userId": 2
+      },
+      "id": 6
     }
   ],
   "messages": [

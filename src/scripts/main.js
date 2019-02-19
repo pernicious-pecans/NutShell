@@ -1,8 +1,8 @@
-import newsGetAndShow from "./news/news-display"
+import newsGetAndShow from "./news/newsPrintToDom"
 import NewsManager from "./news/news-post-manager"
-import newsItemChange from "./news/news-edit-delete"
+import newsEventListeners from "./news/newsEventListeners"
 
 NewsManager.generateNewsForm()
 NewsManager.postNews()
 newsGetAndShow()
-newsItemChange()
+newsEventListeners
