@@ -12,11 +12,14 @@ const saveEvent = () => {
     theButton.addEventListener("click", () => {
 
         const newEvent = {
-            // userId: $("#userId").value,
+            user: {
+                userId: $("#userId").value
+            },
             eventName: $("#eventName").value,
             eventDate: $("#eventDate").value,
             eventLocation: $("#eventLocation").value
         }
+
         if (theButton.textContent.startsWith("Save")) {
             console.log("new event:", newEvent)
             eventDataManager.saveEvent(newEvent)

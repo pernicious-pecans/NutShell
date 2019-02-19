@@ -22,7 +22,7 @@ const eventAction = () => {
             eventDataManager.getEvent(theId).then(
                 (event) => {
                          $("#eventId").value = event.id,
-                        // $("#userId").value = event.userId,
+                        $("#userId").value = event.userId,
                         $("#eventDate").value = event.eventDate,
                         $("#eventLocation").value = event.eventLocation,
                         $("#eventName").value = event.eventName,

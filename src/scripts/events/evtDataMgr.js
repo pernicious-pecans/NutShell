@@ -1,4 +1,3 @@
-const $ = document.querySelector.bind(document)
 
 const eventDataManager = {
 

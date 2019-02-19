@@ -29,64 +29,40 @@
   ],
   "events": [
     {
-      "eventName": "swing",
-      "eventDate": "Friday",
-      "eventLocation": "Downtown",
-      "id": 4
+      "user": {
+        "userId": "undefined"
+      },
+      "eventName": "cartwheels",
+      "eventDate": "2019-02-26",
+      "eventLocation": "gym",
+      "id": 5
     },
     {
-      "eventName": "SingALong",
-      "eventDate": "FRIDAY",
-      "eventLocation": "here",
+      "user": {
+        "userId": ""
+      },
+      "eventName": "guitar playing",
+      "eventDate": "friday",
+      "eventLocation": "over there",
+      "id": 6
+    },
+    {
+      "user": {
+        "userId": ""
+      },
+      "eventName": "volleyball",
+      "eventDate": "yesterday",
+      "eventLocation": "park",
       "id": 7
     },
     {
-      "eventName": "Baseball",
-      "eventDate": "Friday",
-      "eventLocation": "Downtown",
+      "user": {
+        "userId": "undefined"
+      },
+      "eventName": "Dogs running",
+      "eventDate": "2019-03-23",
+      "eventLocation": "Dog Park",
       "id": 8
-    },
-    {
-      "eventName": "Swing-A-Bat",
-      "eventDate": "Saturday",
-      "eventLocation": "Downtown",
-      "id": 10
-    },
-    {
-      "eventName": "BAT Caving",
-      "eventDate": "Saturday",
-      "eventLocation": "The Caves",
-      "id": 11
-    },
-    {
-      "eventName": "BaseBall Game",
-      "eventDate": "Friday",
-      "eventLocation": "Ballfield",
-      "id": 12
-    },
-    {
-      "eventName": "Swings",
-      "eventDate": "Friday",
-      "eventLocation": "playground",
-      "id": 14
-    },
-    {
-      "eventName": "Batman",
-      "eventDate": "Friday",
-      "eventLocation": "PARK",
-      "id": 15
-    },
-    {
-      "eventName": "AAA",
-      "eventDate": "AA",
-      "eventLocation": "AA",
-      "id": 16
-    },
-    {
-      "eventName": "AAA",
-      "eventDate": "AA",
-      "eventLocation": "AA",
-      "id": 17
     }
   ],
   "tasks": [
@@ -95,7 +71,7 @@
       "userId": 1,
       "taskName": "",
       "taskComplete": "no",
-      "TaskCompleteDate": "date complete"
+      "taskCompleteDate": "date complete"
     }
   ],
   "friends": [
