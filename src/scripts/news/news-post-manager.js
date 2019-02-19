@@ -5,13 +5,15 @@ const NewsManager = {
         document.getElementById("#newsPost").addEventListener("click", () => {
 
     const newsToAdd = {
-                userId: 2,
+                // userId: 2,
                 newsTitle: $("#name").value,
                 synopsis: $("#summary").value,
                 url: $("#URL").value,
-                newsTimestamp: 2
+                newsTimestamp: `${new Date(2019, 2)}`,
+                user: {
+                    userId: 2
+                }
     }
-
             fetch("http://localhost:8088/news", {
                 method: "POST",
                 headers: {

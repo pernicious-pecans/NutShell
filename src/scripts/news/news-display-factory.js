@@ -6,5 +6,4 @@ const newsFactory = (newsURL, newsName, newsSumm, newsId) => {
         <button id="delete--${newsId}">delete</button>
             </section>`
 }
-
 export default newsFactory

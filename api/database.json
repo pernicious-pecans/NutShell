@@ -11,36 +11,24 @@
   ],
   "news": [
     {
-      "userId": 2,
-      "newsTitle": "test",
-      "synopsis": "test",
-      "url": "test.com",
-      "newsTimestamp": 2,
-      "id": 1
-    },
-    {
-      "userId": 2,
-      "newsTitle": "test",
-      "synopsis": "test",
-      "url": "test.com",
-      "newsTimestamp": 2,
-      "id": 2
-    },
-    {
-      "userId": 2,
       "newsTitle": "booger",
       "synopsis": "booger",
-      "url": "booger.com",
-      "newsTimestamp": 2,
-      "id": 3
-    },
-    {
-      "userId": 2,
-      "newsTitle": "booger",
-      "synopsis": "booger",
-      "url": "booger.com",
-      "newsTimestamp": 2,
+      "url": "booger",
+      "newsTimestamp": "Fri Mar 01 2019 00:00:00 GMT-0600 (Central Standard Time)",
+      "user": {
+        "userId": 2
+      },
       "id": 4
+    },
+    {
+      "newsTitle": "booger",
+      "synopsis": "booger",
+      "url": "booger",
+      "newsTimestamp": "Fri Mar 01 2019 00:00:00 GMT-0600 (Central Standard Time)",
+      "user": {
+        "userId": 2
+      },
+      "id": 5
     }
   ],
   "messages": [
