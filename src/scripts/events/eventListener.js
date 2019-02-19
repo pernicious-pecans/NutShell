@@ -22,14 +22,18 @@ const saveEvent = () => {
 
         if (theButton.textContent.startsWith("Save")) {
             console.log("new event:", newEvent)
+
             eventDataManager.saveEvent(newEvent)
+
             .then(() => eventList.list())
             .then(() => clearEventForm())
         }
         else if (theButton.textContent.startsWith("Update")) {
+
             const id = $("#eventId").value
 
               eventDataManager.editEvent(parseInt(id), newEvent)
+
             .then(() => eventList.list())
             .then(() => clearEventForm())
             .then(()=> {
