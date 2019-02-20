@@ -21,4 +21,3 @@ const taskList =  {
 
 // Export
 export default taskList
-//

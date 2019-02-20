@@ -10,12 +10,6 @@ const taskDataManager = {
                 return parsedTasks
             })
     },
-    // Delete task by ID
-    deleteTask: (taskId) => {
-        return fetch(`http://localhost:8088/tasks/${taskId}`, {
-            method: "DELETE"
-        })
-    },
     // Get (retrieve) single task by ID
     getTask: (taskId) => {
         return fetch(`http://localhost:8088/tasks/${taskId}`)
