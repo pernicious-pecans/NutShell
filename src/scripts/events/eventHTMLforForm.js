@@ -1,4 +1,3 @@
-const $ = document.querySelector.bind(document)
 
 /*
 1. Name of event
