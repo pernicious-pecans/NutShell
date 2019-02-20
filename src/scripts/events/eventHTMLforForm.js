@@ -13,23 +13,23 @@ const $ = document.querySelector.bind(document)
 const formHTML = () => {
 
         return `
-        <section>
-                <input id="eventId" name="eventId" type="hidden"></input>
-                <input id="userId" name="userId" type="hidden"></input>
+        <section class="inputForm" name="eventForm">
+                <input id="eventId" name="eventId" ></input>
+                <input  id="userId" name="userId"></input>
 
             <fieldset>
                 <label class="label" for="eventName"> Name of Event </label>
-                <input id="eventName" type="text"></input>
+                <input id="eventName" type="text" required class="requiredEventInput"></input>
             </fieldset>
 
             <fieldset>
                 <label class="label" for="eventDate"> Date of Event </label>
-                <input id="eventDate" type="text"></input>
+                <input min="2019-02-18" id="eventDate" type="date" class="requiredEventInput" pattern=""[0-9]{2}-[0-9]{2}-[0-9]{4} ></input>
             </fieldset>
 
             <fieldset>
                 <label class="label" for="eventLocation"> Location of Event </label>
-                <input id="eventLocation" type="text"></input>
+                <input id="eventLocation" type="text" required class="requiredEventInput"></input>
             </fieldset>
 
             <button id="eventFormAction">Save Event</button>

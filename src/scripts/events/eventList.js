@@ -12,9 +12,19 @@ const eventList = {
     list: () => {
         eventDataManager.fetchEvents().then(
             (parsedEvents) => {
+                spot.innerHTML = "";
+
+                // sortEvents.push(parsedEvents)
+                parsedEvents.sort(function(eventA, eventB){
+                     let dateA = new Date(eventA.eventDate)
+                     let dateB =new Date(eventB.eventDate)
+                    return dateA - dateB
+                })
+
                 parsedEvents.forEach(event => {
                     spot.innerHTML += eventCard(event)
-                });
+
+                })
             }
         )
     }
