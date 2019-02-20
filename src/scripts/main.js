@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import newsGetAndShow from "./news/newsPrintToDom"
 import NewsManager from "./news/news-post-manager"
 import newsEventListeners from "./news/newsEventListeners"
@@ -6,8 +5,7 @@ import newsEventListeners from "./news/newsEventListeners"
 NewsManager.generateNewsForm()
 NewsManager.postNews()
 newsGetAndShow()
-newsEventListeners
-=======
+newsEventListeners.newsContainer()
 import eventDataManager from "./events/evtDataMgr"
 import eventList from "./events/eventList"
 import eventCard from "./events/eventCard"
@@ -28,4 +26,3 @@ post.innerHTML += formHTML()
 
 
 saveEvent()
->>>>>>> master

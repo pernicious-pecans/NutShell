@@ -4,7 +4,7 @@ const apiButlerNews = {
         return fetch(`http://localhost:8088/news?_expand=user&userId=${userId}`)
             .then(res => res.json())
     },
-    getOneArticle: (id) => {
+    getOneNews: (id) => {
         return fetch(`http://localhost:8088/news/${id}`)
             .then(res => res.json())
     },
