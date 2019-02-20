@@ -10,11 +10,15 @@
 */
 
 const formHTML = () => {
-
+        // sessionStorage.setItem("userId: 1")
+        // sessionStorage.getItem("userId")
         return `
         <section class="inputForm" name="eventForm">
-                <input id="eventId" name="eventId" ></input>
-                <input  id="userId" name="userId" value=1></input>
+
+            <fieldset>
+                <input type="hidden" id="eventId" name="eventId" ></input>
+                <input  type="hidden" id="userId" name="userId" value="1"></input>
+            </fieldset>
 
             <fieldset>
                 <label class="label" for="eventName"> Name of Event </label>

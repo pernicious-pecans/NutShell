@@ -27,11 +27,9 @@ eventList.list()
 
 // Tasks
 taskFunctions()
-saveEvent()
 taskList.taskList ()
 enterTask()
 formFunctions()
 
-
-saveEvent()
 eventAction()
+saveEvent()
