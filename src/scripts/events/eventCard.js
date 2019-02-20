@@ -2,13 +2,14 @@
 const eventCard = (event)=>
 {
     return`
-    <section>
-   <h2>${event.eventName}</h2>
-    <p>${event.eventLocation}<p>
-    <p>${event.eventDate}<p>
-    <button class="event-card--button" id='Edit--${event.id}'>Edit ${event.eventName} Event </button>
-    <br>
-    <button class="event-card--button" id='Delete--${event.id}'>Delete ${event.eventName} Event</button>
+    <section class="list">
+    <span>
+    <p><strong>What:</strong>  ${event.eventName}  <strong>
+    Where:</strong>   ${event.eventLocation} <strong>
+    When:</strong> ${event.eventDate}
+    <button class="button--card" id='Edit--${event.id}'>Edit This Event </button>
+    <button class="button--card" id='Delete--${event.id}'>Delete This Event</button></p>
+    </span>
     </section>
     `
 }
