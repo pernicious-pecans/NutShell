@@ -15,6 +15,10 @@ import eventList from "./events/eventList"
 import eventCard from "./events/eventCard"
 import formHTML from "./events/eventHTMLforForm"
 import saveEvent from "./events/eventListener"
+//
+import taskFunctions from "./tasks/taskForm"
+import taskList from "./tasks/taskList"
+import enterTask from "./tasks/taskListener"
 import eventAction from "./events/cardEventListener";
 import formFunctions from "./events/eventForm";
 // import checkEventForm from "./events/checkEventForm";
@@ -28,6 +32,11 @@ const post = $("#events_input")
 
 eventList.list()
 
+// Tasks
+taskFunctions()
+saveEvent()
+taskList.taskList ()
+enterTask()
 formFunctions()
 
 
