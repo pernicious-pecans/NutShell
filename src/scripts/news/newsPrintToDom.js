@@ -11,8 +11,8 @@ const newsGetAndShow = () => {
                 const newsSumm = news.synopsis
                 const newsId = news.id
 
-                const html = newsFactory(newsUrl, newsName, newsSumm, newsId)
-                $("#news_display").innerHTML += html
+                return newsFactory(newsUrl, newsName, newsSumm, newsId)
+                
             })
         })
 }

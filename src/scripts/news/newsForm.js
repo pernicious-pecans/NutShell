@@ -10,7 +10,7 @@ const newsForm = {
     <button id="newsPostButton">Post New Article</button>`,
 
     formEntrySlots2: `
-    <input type="hidden2" id="newsHiddenInput2" value="">
+    <input type="hidden" id="newsHiddenInput2" value="">
     <label for="Name">Name: </label>
     <input id="newsName2" type="text" placeholder=title>
     <label for="name">Summary: </label>
@@ -32,9 +32,7 @@ const newsForm = {
             "synopsis": summary,
             "url": url,
             "timestamp": Date.now(),
-            "user": {
-                "userId": 2
-            }
+            "user": 1
         }
         //replace object in database
         apiButlerNews.editNews(articleId, newsObject)
