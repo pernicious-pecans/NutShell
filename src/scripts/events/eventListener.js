@@ -20,9 +20,7 @@ const saveEvent = () => {
 
 
         const newEvent = {
-            user: {
-                userId: $("#userId").value
-            },
+            userId: $("#userId").value,
             eventName: $("#eventName").value,
             eventDate: $("#eventDate").value,
             eventLocation: $("#eventLocation").value
