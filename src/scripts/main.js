@@ -8,8 +8,7 @@ const $ = document.querySelector.bind(document)
 
 NewsManager.generateNewsForm()
 NewsManager.postNews()
-let newsHTML = newsGetAndShow()
-$("#news_display").innerHTML = newsHTML
+newsGetAndShow()
 newsEventListeners.newsContainer()
 import eventDataManager from "./events/evtDataMgr"
 import eventList from "./events/eventList"

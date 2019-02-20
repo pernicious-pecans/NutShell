@@ -58,7 +58,13 @@ const newsEventListeners = {
                 let newsId = event.target.id.split("--")[1]
                 console.log(newsId)
                 //calls the method of delete on apiButlerNews with the ID refrence as an argument
-                apiButlerNews.deleteNews(newsId).then(newsGetAndShow())
+                apiButlerNews.deleteNews(newsId)
+                .then(() => {
+                    $("#news_display").innerHTML = ""
+                })
+                .then(()=>{
+                    newsGetAndShow()
+                })
             }
         })
     }

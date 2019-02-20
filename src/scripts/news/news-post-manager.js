@@ -30,7 +30,12 @@ const NewsManager = {
             //     contactForm()
             // })
 
-            newsGetAndShow()
+            .then(() => {
+                $("#news_display").innerHTML = ""
+            })
+            .then(()=>{
+                newsGetAndShow()
+            })
         })
     },
     generateNewsForm: () => {
