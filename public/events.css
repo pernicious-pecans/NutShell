@@ -1,0 +1,42 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    width:90%;
+    height: 1.5em;
+    flex-wrap: wrap;
+}
+.list:first-of-type{
+    font-weight: bold;
+    height: 2em;
+    width: 100%;
+    background-color: aquamarine;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+span {
+    display: inline-flex;
+    /* display: inline-flexbox; */
+    /* display: inline-block; */
+    justify-content: space-around;
+    height: 1.5em;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+}
+ .button--card {
+    margin-left: .5em;
+    /* margin-right: 1em; */
+    display: inline-flex;
+    /* justify-content: space-around; */
+    height: 1.5em;
+    flex-wrap: wrap;
+}

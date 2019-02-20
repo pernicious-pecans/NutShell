@@ -5,11 +5,12 @@ import formHTML from "./events/eventHTMLforForm"
 import saveEvent from "./events/eventListener"
 import eventAction from "./events/cardEventListener";
 import formFunctions from "./events/eventForm";
+// import checkEventForm from "./events/checkEventForm";
 
 
-const $ = document.querySelector.bind(document)
+// const $ = document.querySelector.bind(document)
 
-const post = $("#events_input")
+// const post = $("#events_input")
 
 
 eventList.list()
@@ -17,7 +18,5 @@ eventList.list()
 formFunctions()
 
 
-
-// eventAction
 saveEvent()
 eventAction()
