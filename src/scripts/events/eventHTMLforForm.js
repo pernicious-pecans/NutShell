@@ -1,4 +1,3 @@
-const $ = document.querySelector.bind(document)
 
 /*
 1. Name of event
@@ -11,11 +10,15 @@ const $ = document.querySelector.bind(document)
 */
 
 const formHTML = () => {
-
+        // sessionStorage.setItem("userId: 1")
+        // sessionStorage.getItem("userId")
         return `
         <section class="inputForm" name="eventForm">
-                <input id="eventId" name="eventId" ></input>
-                <input  id="userId" name="userId"></input>
+
+            <fieldset>
+                <input type="hidden" id="eventId" name="eventId" ></input>
+                <input  type="hidden" id="userId" name="userId" value="1"></input>
+            </fieldset>
 
             <fieldset>
                 <label class="label" for="eventName"> Name of Event </label>
@@ -24,7 +27,7 @@ const formHTML = () => {
 
             <fieldset>
                 <label class="label" for="eventDate"> Date of Event </label>
-                <input min="2019-02-18" id="eventDate" type="date" class="requiredEventInput" pattern=""[0-9]{2}-[0-9]{2}-[0-9]{4} ></input>
+                <input min="2019-02-18" id="eventDate" type="date" class="requiredEventInput" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" ></input>
             </fieldset>
 
             <fieldset>
