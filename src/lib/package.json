@@ -21,14 +21,12 @@
     "grunt-eslint": "^21.0.0",
     "grunt-http-server": "^2.1.0",
     "load-grunt-config": "^0.19.2",
-    "nss-domcomponent": "^0.1.0",
-    "grunt-bg-shell": "^2.3.3"
+    "nss-domcomponent": "^0.1.0"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "grunt-jquery-builder": "^0.2.1",
     "jquery": "^3.3.1",
     "moment": "^2.24.0"
-    "nss-domcomponent": "^0.1.0"
   }
 }
