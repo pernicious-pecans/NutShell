@@ -4,13 +4,15 @@ import RegistrationManager from "./register"
 const navbarbtn = {
     registrationBtn: () => {
         document.querySelector("#registerBtn").addEventListener("click", () => {
-            RegistrationManager()
+            RegistrationManager.generateRegistrationForm()
+            RegistrationManager.listenForRegister()
         }
         )
     },
-    registrationBtn: () => {
+    logInbtn: () => {
         document.querySelector("#logInbtn").addEventListener("click", () => {
-            loginManager()
+            loginManager.generateloginForm()
+            loginManager.listenForlogin()
 
         })
     }

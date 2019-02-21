@@ -23,7 +23,6 @@ const RegistrationManager = {
                 .then(r => r.json())
                 // Because json-server sends us the new thing in response
                 .then(() => {
-                    sessionstorage.setItem("credentials", `${users.id}`)
                     // Show contact entry form
                     mainpage()
                 })

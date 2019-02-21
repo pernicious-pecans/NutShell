@@ -1,3 +1,4 @@
 import navbarbtn from "./login/navbar"
 
-navbarbtn()
+navbarbtn.logInbtn()
+navbarbtn.registrationBtn()
