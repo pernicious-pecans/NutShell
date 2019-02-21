@@ -22,14 +22,6 @@ const NewsManager = {
                 },
                 body: JSON.stringify(newsToAdd)
             })
-            // .then(r => r.json())
-            // // Because json-server sends us the new thing in response
-            // .then((newUserObject) => {
-            //     // Show contact entry form
-            //     generateContactForm(newUserObject.id)
-            //     contactForm()
-            // })
-
             .then(() => {
                 $("#news_display").innerHTML = ""
             })

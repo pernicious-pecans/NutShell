@@ -34,7 +34,6 @@ const enterTask = () => {
                     document.querySelector("#taskFormAction").textContent = "Save Task"
                 })
         }
-        
     })
 }
 
