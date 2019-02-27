@@ -1,4 +1,3 @@
-import userinfo from "./apitester"
 import usersInfo from "./apitester";
 const $ = document.querySelector.bind(document)
 const loginManager = {
@@ -8,17 +7,16 @@ const loginManager = {
             // Create a user object
             const activeUser = {
                 username: $("#username").value,
-                password: $("#password").value,
+                password: $("#password").value
             }
-            userinfo.then()
-            if (activeUser.username === usersInfo.users.username && activeUser.password === usersInfo.users.password) {
+            .then( ()=> {
+            if (activeUser.username === usersInfo.getUsername.username && activeUser.password === usersInfo.getUserPassword.password) {
                 // Show contact entry form
-                mainpage()
+                console.log("it worked")
             } else {
-                alert("invalid credentials")
-            }
-        })
-
+                console.log("invalid credentials")
+            }})
+            })
     },
     generateloginForm: () => {
         document.querySelector("#formContainer").innerHTML = `

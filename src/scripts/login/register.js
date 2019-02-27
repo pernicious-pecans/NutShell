@@ -13,7 +13,7 @@ const RegistrationManager = {
             }
 
             // POST to API
-            fetch("http://localhost:8088/users", {
+            fetch("http://localhost:9999/users", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
